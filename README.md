@@ -1,4 +1,12 @@
 Multi-Agent Sports Intelligence Framework
+(e.g., "Summarize the 2022 World Cup Final") ↓ [Root Agent] SportsFinder (gemini-2.5-flash) Role: Orchestrator & Final Expert Response
+ ↓ ├─→ [Sub-Agent] ScoreReporter (gemini-2.5-flash) │   Role: Extraction of raw match data.
+ │   Data Found: Argentina 3–3 France (4–2 penalties).
+ │   Data Found: 88,966 spectators at Lusail Stadium.
+ │   ← (Returns structured scores to Root) │ └─→ [Sub-Agent] SportsAnalyst (gemini-2.5-flash) Role: Qualitative and historical analysis.
+ Context: One of the greatest football matches in history.
+ Context: Messi's second Golden Ball.
+ ← (Returns analytical context to Root) ↓ Final Response to User SportsFinder synthesizes data into a concise expert response (<20 words)
 This repository implements a hierarchical multi-agent system designed for the Intelligence Bureau track, specifically focused on converting unstructured sporting narratives into structured intelligence. The system utilizes the Google ADK to analyze complex events, such as the 2022 FIFA World Cup Final.
 System Architecture: Agent Orchestration
 The core of the system is a hierarchical orchestration model where a primary "Root Agent" manages specialized sub-agents to process data efficiently
