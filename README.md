@@ -29,3 +29,4 @@ Temporal and Event Mapping: The system identifies rapid event sequences within t
 Historical Contextualization: The agents process narrative history to identify rare feats, such as Argentina becoming only the second team in history to win the World Cup after losing their opening match (a 2–1 loss to Saudi Arabia)
 .
 Entity Recognition and Achievement Tracking: The system captures individual accolades mentioned in the text, such as Lionel Messi winning the Golden Ball and becoming the first player to win the award twice
+image link:https://github.com/harrishvattu1010/SportsFinder/blob/main/hackathon%20diagram.png?raw=true
